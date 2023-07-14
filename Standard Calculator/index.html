@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../Calculator_logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../Calculator_logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../Calculator_logo/favicon-16x16.png">
+  <link rel="manifest" href="../Calculator_logo/site.webmanifest">
+
+  <link rel="stylesheet" href="../Standard Calculator/index.css" />
+  <script src="../Standard Calculator/index.Js"></script>
+  <script src="../forBoth/index3.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="box">
+
+
+      <nav id="navbar" >
+        <div id="homePage">
+          <a href="../Standard Calculator/index.html">
+            <img type="button" src="../Images/homePageLogo.png" alt="Home Page">
+          </a>
+        </div>
+
+        <div id="page_2">
+          <a href="#">
+            <img src="../Images/nextPage.png" alt="error">
+          </a>
+        </div>
+      </nav>
+
+      <div class="dropdown">
+        <span type="button" class="button dropdown-button" onclick="more_option">&#8942;</span>
+        <div class="dropdown-content">
+          <a class="Standard" href="../Standard Calculator/index.html">Standard </a>
+          <a href="../Scientific Calculator/index1.html">Scientific</a>
+        </div>
+      </div>
+
+      <center>
+        <div class="display"><input type="text" size="18" id="display" readonly placeholder="0"></div>
+      </center>
+      <div class="keys">
+        <center>
+          <p>
+            <input type="button" class="button grey" value="&#37;" onclick="calculatePercent()">
+            <input type="button" class="button grey" value="&#8730;" onclick="calculateSquareRoot()" />
+            <input type="button" id="btn-backSpace" class="button red" value="DEL" onclick='back()'>
+            <input type="button" class="button grey" id="btn-divide" value="&#xf7;" onclick='math("/")'>
+          </p>
+          <p>
+            <input type="button" class="button black" id="btn_7" value="7" onclick='math("7")'>
+            <input type="button" class="button black" id="btn_8" value="8" onclick='math("8")'>
+            <input type="button" class="button black" id="btn_9" value="9" onclick='math("9")'>
+            <input type="button" class="button grey" id="btn-multiply" value="&#xd7;" onclick='math("*")'>
+          </p>
+          <p>
+            <input type="button" class="button black" id="btn-4" value="4" onclick='math("4")'>
+            <input type="button" class="button black" id="btn-5" value="5" onclick='math("5")'>
+            <input type="button" class="button black" id="btn-6" value="6" onclick='math("6")'>
+            <input type="button" class="button grey" id="btn-minus" value="-" onclick='math("-")'>
+
+
+          </p>
+          <p><input type="button" class="button black" id="btn-1" value="1" onclick='math("1")'>
+            <input type="button" class="button black" id="btn-2" value="2" onclick='math("2")'>
+            <input type="button" class="button black" id="btn-3" value="3" onclick='math("3")'>
+            <input type="button" class="button grey" id="btn-plus" value="+" onclick='math("+")'>
+
+          </p>
+          <p>
+            <input type="button" class="button black" id="btn-0" value="0" onclick='math("0")'>
+            <input type="button" class="button black" id="btn-dot" value="." onclick='math(".")'>
+            <input type="button" class="button red" value="AC" onclick='c("")'>
+            <input type="button" id="btn-equal" class="button green" value="=" onclick='e()'>
+          </p>
+          <center>
+
+      </div>
+
+    </div>
+
+
+</body>
+
+</html>

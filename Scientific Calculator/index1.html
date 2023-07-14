@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../Calculator_logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../Calculator_logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../Calculator_logo/favicon-16x16.png">
+  <link rel="manifest" href="../Calculator_logo/site.webmanifest">
+
+  <link rel="stylesheet" href="../Scientific Calculator/index1.css" />
+  <script src="../Scientific Calculator/index1.js"></script>
+  <script src="../forBoth/index3.js"></script>
+</head>
+<title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="box">
+
+
+      <nav id="navbar">
+        <div id="homePage">
+          <a href="../Standard Calculator/index.html">
+            <img type="button" src="../Images/homePageLogo.png" alt="Home Page">
+          </a>
+        </div>
+
+        <div id="page_2">
+          <a href="#">
+            <img src="../Images/nextPage.png" alt="error">
+          </a>
+        </div>
+      </nav>
+
+      <div class="dropdown">
+        <span type="button" class="button dropdown-button" onclick="more_option">&#8942;</span>
+        <div class="dropdown-content">
+          <a class="Standard" href="../Standard Calculator/index.html">Standard </a>
+          <a href="../Scientific Calculator/index1.html">Scientific</a>
+        </div>
+      </div>
+
+      <center>
+        <div class="display"><input type="text" size="20" id="display" readonly placeholder="0"></div>
+        
+      </center>
+      <div class="keys">
+        <center>
+          <p>
+            <input type="button" class="button grey" value="X!" onclick="calculateFactorial()">
+            <input type="button" class="button grey" value="&#40;" onclick="openBracket()">
+            <input type="button" class="button grey" value="&#41;" onclick="closeBracket()">
+            <input type="button" class="button grey" value="log" onclick="calculateLog()">
+            <input type="button" class="button grey" value="&pi;" onclick="calculatePI()">
+          </p>
+
+          <p>
+            <input type="button" class="button grey" value="Sin" onclick="calculateSin()">
+            <input type="button" class="button grey" value="Cos" onclick="calculateCos()">
+            <input type="button" class="button grey" value="Tan" onclick="calculateTan()">
+            <input type="button" class="button grey" value="g" onclick="calculateGravity()">
+            <input type="button" class="button grey" value="e" onclick="calculateE()">
+          </p>
+          <p>
+            <input type="button" class="button grey" value="&#8730;" onclick="calculateSquareRoot()" />
+            <input type="button" class="button grey" value="&#x221B;" onclick="calculateCubeRoot()">
+            <input type="button" class="button grey" value="x&sup2;" onclick="calculateSquare()">
+            <input type="button" class="button grey" value="x&sup3;" onclick="calculateCube()">
+            <input type="button" class="button grey" value="x&#8315;&#185;" onclick="calculatePowerNegativeOne()">
+          </p>
+          <p>
+            <input type="button" class="button black" id="btn-7" value="7" onclick='math("7")'>
+            <input type="button" class="button black" id="btn-8" value="8" onclick='math("8")'>
+            <input type="button" class="button black" id="btn-9" value="9" onclick='math("9")'>
+            <input type="button" class="button red" id="btn-backSpace" value="DEL" onclick='back()'>
+            <input type="button" class="button red" value="AC" onclick='c("")'>
+          </p>
+          <p>
+            <input type="button" class="button black" id="btn-4" value="4" onclick='math("4")'>
+            <input type="button" class="button black" id="btn-5" value="5" onclick='math("5")'>
+            <input type="button" class="button black" id="btn-6" value="6" onclick='math("6")'>
+            <input type="button" class="button grey" id="btn-multiply" value="&#xd7;" onclick='math("*")'>
+            <input type="button" class="button grey" id="btn-divide" value="&#xf7;" onclick='math("/")'>
+          </p>
+          <p><input type="button" class="button black" id="btn-1" value="1" onclick='math("1")'>
+            <input type="button" class="button black" id="btn-2" value="2" onclick='math("2")'>
+            <input type="button" class="button black" id="btn-3" value="3" onclick='math("3")'>
+            <input type="button" class="button grey" id="btn-plus" value="+" onclick='math("+")'>
+            <input type="button" class="button grey" id="btn-minus" value="-" onclick='math("-")'>
+          </p>
+          <p>
+            <input type="button" class="button black" id="btn-0" value="0" onclick='math("0")'>
+            <input type="button" class="button black" id="btn-dot" value="." onclick='math(".")'>
+            <button id="btn-expNo" type="button" class="button black"
+              onclick="calaculateExponentialNotation()">&#10005;10<sup>x</sup></button>
+            <input type="button" class="button black" value="D&#x2192;S" onclick="convertToFraction()">
+            <input type="button" id="btn-equal" class="button green" value="=" onclick='e()'>
+          </p>
+          <center>
+
+      </div>
+
+    </div>
+
+
+</body>
+
+</html>
